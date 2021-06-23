@@ -78,7 +78,7 @@ namespace DIO.Series
         {
             Console.Write("Digite o Id da Série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
-            Console.Write("Você realmente deseja excluir essa série? Digite 1 para excluir e 2 para cancelar: ");
+            Console.Write("Você realmente deseja excluir essa série? Digite 1 para confirmar a exclusão: ");
             int opcao = int.Parse(Console.ReadLine());
             if (opcao == 1)
             {
@@ -86,7 +86,7 @@ namespace DIO.Series
                 Console.Write("Série excluida com sucesso!");
                 return;
             }
-            if (opcao == 0)
+            else
             {
                 return;
             }
